@@ -1,0 +1,181 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "s1",
+      "password": "s1",
+      "email": "s1@gmail.com",
+      "dateFormat": "dd/MMM/yyyy",
+      "numberFormat": "2.2-3",
+      "language": "english",
+      "phoneNo": "999999",
+      "role": "admin",
+      "address": "s r nagar hyderabad"
+    },
+    {
+      "id": 2,
+      "username": "s2",
+      "password": "s2",
+      "email": "s2@gmail.com",
+      "dateFormat": "MMM/dd/yyyy",
+      "numberFormat": "2.2-2",
+      "language": "french",
+      "phoneNo": "88888",
+      "role": "guest",
+      "address": "ameerpet hyderabad"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "images": [
+        "1445626087908-htc_one_v_t320e_black-7.jpeg",
+        "1445626087909-htc_one_v_t320e_black-8.jpeg",
+        "1445626087914-htc_one_v_t320e_black-1.jpeg",
+        "1445626087948-htc_one_v_t320e_black-2.jpeg",
+        "1445626087952-htc_one_v_t320e_black-3.jpeg",
+        "1445626087952-htc_one_v_t320e_black-4.jpeg",
+        "1445626087954-htc_one_v_t320e_black-5.jpeg",
+        "1445626088014-htc_one_v_t320e_black-6.jpeg"
+      ],
+      "price": 210,
+      "description": "If you know your HTC phones, the resemblance between the One V and the HTC Legend (and, in turn, the Hero) will not go unnoticed. The trademark \"chin\" makes a strong comeback. Then, as now, HTC are targeting an audience that seek a phone, which makes a statement more than anything else, and with a slim 9.2mm profile and streamlined design, the One V does just that.\n\nBut does the HTC pack enough within its slick package for those of us looking for more than just a pretty face? We'll answer that question in detail in the pages to come. For starters, here are the pros and cons of the One V at-a-glance.",
+      "title": "HTC One V",
+      "__v": 0,
+      "mainImageIndex": 2,
+      "qty": 1,
+      "category": "HTC"
+    },
+    {
+      "id": 2,
+      "images": [
+        "1445626676223-zenfone-2-deluxe-ze551ml-1.jpeg",
+        "1445626676225-1441832472000_IMG_533191.jpeg",
+        "1445626676226-1441832472000_IMG_533194.jpeg"
+      ],
+      "price": 475,
+      "description": "Released 2015, September\n170g, 10.9mm thickness\nAndroid OS, v5.0\n64/128GB storage, microSD card slot",
+      "title": "Asus Zenfone 2 Deluxe",
+      "__v": 0,
+      "mainImageIndex": 0,
+      "qty": 1,
+      "category": "Asus"
+    },
+    {
+      "id": 3,
+      "qty": 1,
+      "mainImageIndex": 1,
+      "images": [
+        "1446634516095-2a96138dddcab6b9b293defcd789e58c.jpeg",
+        "1446634516105-2e1eb02d0dc841227973e04f1d5248ca.jpeg",
+        "1446634516111-39f304603f7b9d6f0884c625c5718abf.jpeg",
+        "1446634516114-8233a18da5b10ab4fe338e9172698dc4.jpeg",
+        "1446634516120-0f734d55347f990d8a7cf449191c52da.jpeg",
+        "1446634516545-1dc3f7c52e7168623addba67ce4e9153.jpeg"
+      ],
+      "price": 515,
+      "category": "Meizu",
+      "description": "The Pro 5 represents the very best of what Meizu has to offer right now in terms of both hardware and software. It has a unibody aluminum design, a 5.7-inch FullHD display, an octa-core Samsung Exynos 7420 chipset, a 21 megapixel camera with phase detection and laser autofocus, a fingerprint sensor, and a reversible USB Type-C port.",
+      "title": "Meizu Pro 5 64Gb",
+      "__v": 0
+    },
+    {
+      "id": 4,
+      "qty": 1,
+      "mainImageIndex": 1,
+      "images": [
+        "1446635553224-1c79e3067029192a0841ee878c1321ff.jpeg",
+        "1446635553228-751a69c02626268cba19c6286684deb8.jpeg",
+        "1446635553231-752d52938be5c0cfce652b479a7aefb6.jpeg",
+        "1446635553236-27560147973f570da62612f8552116cc.jpeg",
+        "1446635553239-e040f47c58c25fb23cfef1c8f07bd8ec.jpeg",
+        "1446635553242-fb7f43b92deb29ceb778d967bdb0d53e.jpeg"
+      ],
+      "price": 199,
+      "category": "Samsung",
+      "description": "The Samsung Galaxy J5 is one of Samsung's two new budget offerings, the other being the J7. The two phones undercut the previous launched E-series devices with more aggressive pricing while offering nearly identical specifications.\nThe J5 is a typical budget smartphone with its compact dimensions and low-end specifications. The phone will be competing against the likes of the new Moto G in various emerging markets.",
+      "title": "Samsung Galaxy J5",
+      "__v": 0
+    },
+    {
+      "id": 5,
+      "qty": 1,
+      "mainImageIndex": 0,
+      "images": [
+        "1446112312866-apple-iphone-6-1.jpeg",
+        "1446112312874-apple-iphone-6-2.jpeg",
+        "1446112312878-apple-iphone-6-3.jpeg",
+        "1446112312895-apple-iphone-6-and-iphone-6-plus.jpeg"
+      ],
+      "price": 689,
+      "category": "Apple",
+      "description": "This is Apple like we've never seen before. Apple like we never thought we'll see. To begin with, there's supposed to be no better iPhone than the iPhone 6. That's the sort of thing you'd expect of Apple. Come September every year, the world grabs a bag of popcorn and gets ready to watch Apple's bestest iPhone yet come on stage in all its glory.\n\nThat's what we did too, minus the popcorn, which by the way would've had nothing to do with the bitter aftertaste the presentation left. And no, we don't mean Apple's live streaming blunder.\n\nThings actually started off nicely with the announcement of the long overdue screen size bump, and we didn't get a cheaper option this time - we were treated to possibly a bigger, better iPhone to go with the best iPhone to date. How Apple - it takes another iPhone to beat the iPhone.",
+      "title": "Apple iPhone 6",
+      "__v": 0
+    },
+    {
+      "id": 6,
+      "qty": 1,
+      "mainImageIndex": 0,
+      "images": [
+        "1446113838593-xiaomi-mi4i-2.jpeg",
+        "1446113838595-xiaomi-mi4i-3.jpeg",
+        "1446113838597-xiaomi-mi4i-4.jpeg"
+      ],
+      "price": 459,
+      "category": "Xiaomi",
+      "description": "The Xiaomi Mi 4i was designed to be an affordable semi-flagship, but tries to punch above its weight. The Mi 4i is thinner, lighter and more connected than the original, and lands straight on Android Lollipop.\n\nThe Xiaomi Mi 4i shares plenty of DNA with the original Mi 4, some of the hardware duly scaled down for affordability. The software though genuinely tries to make up for it. The Xiaomi Mi 4i boasts a premium 5\" IPS 1080p display and a very capable 13MP camera, both shared with the flagship. The Snapdragon 615 chipset with an octa-core processor integrates Cat. 4 LTE with the added benefit of dual-SIM support.\n\nThe Mi 4i has to do without the top-of-the-line dual-glass chassis of the original, but its conventional polycarbonate unibody makes it thinner and lighter, without compromising looks and notably improving the grip. Bottom line, the Mi 4i is built to be cheaper but doesn't look it. Plus, you do get the latest MIUI 6 launcher on top of a buttery-smooth Lollipop OS.",
+      "title": "Xiaomi Mi 4i",
+      "__v": 0
+    },
+    {
+      "id": 7,
+      "qty": 1,
+      "mainImageIndex": 1,
+      "images": [
+        "1446566848026-moto-x-play-1.jpeg",
+        "1446566850843-moto-x-play-2.jpeg"
+      ],
+      "price": 455,
+      "category": "Motorola",
+      "description": "The Moto X Play is the balancing act between the Moto G and Moto X Style with a tendency to aim high instead of settle for less. At 5.5 inches in diagonal its display still puts it in phablet territory, leaving the Moto G (3rd gen) to cater to compact phone lovers. It's a FullHD panel too, striking the obvious reasonable compromise between sharpness and battery life.\n\nAnd battery life is one area, where the Moto X Play should excel - it has a huge 3,630mAh cell, with support for fast charging too, though a TurboCharger has sadly been omitted from the bundle.\n\nThe Moto X Play comes with the much-hyped new 21MP camera from the flagship, complete with phase detection autofocus and a dual-LED flash too. What it lacks is 4K video capture - the Snapdragon 615 that powers the Play caps recording at 1080p. Qualcomm's ubiquitous midrange chip is coupled with 2GB of RAM and 16GB or 32GB of built-in storage - run-of-the-mill specs in the segment.\n\nOne of the coolest features of the Moto X Play is customizability. You can choose from close to 200 color combinations between the front panel, back cover, frame and camera accent, and sport the look that best fits your style. That is, if you're in one of the few lucky countries where the Motomaker is available.",
+      "title": "Motorola Moto X Play",
+      "__v": 0
+    },
+    {
+      "id": 8,
+      "qty": 1,
+      "mainImageIndex": 3,
+      "images": [
+        "1446633424216-11d83efa5396a83b2184734435aac9e8.jpeg",
+        "1446633424734-790cc399c9c18096f367eaff4fd10cb6.jpeg",
+        "1446633425105-968be923074c49ab8547b514a004ddf2.jpeg",
+        "1446633425108-977b1da5db0b0bbc5eea82f01d4688ec.jpeg",
+        "1446633425211-c35a970093f6e3aa00320c27b60eddaf.jpeg",
+        "1446633425217-d109e48be618063c201532911851c7b6.jpeg",
+        "1446633425482-microsoft-lumia-950-2.jpeg"
+      ],
+      "price": 150,
+      "category": "Microsoft",
+      "description": "Today Microsoft held a press conference in New York and it introduced three new Lumia smartphones as part of its newly charted strategy. The Lumia 950 XL is the long awaited flagship entry, the Lumia 950 targets the business class and the Lumia 550 seems line an excellent value for money.\n\nLast July Microsoft announced a major restructuring, which started by writing off the Nokia acquisition and laying off 7,800 employees. Then the Windows, Phone, Tablet, Xbox, HoloLens and Band divisions were all united under a single Microsoft Devices with Terry Myerson serving as the unit's chief.",
+      "title": "Microsoft Lumia 950",
+      "__v": 0
+    },
+    {
+      "id": 9,
+      "qty": 1,
+      "mainImageIndex": 0,
+      "images": [
+        "1446633932501-8e07a7919143291a8c8600f02c2bb3de.jpeg",
+        "1446633938434-d93377b5881d65db60e45b74e928f75b.jpeg",
+        "1446633940440-fec8a5b68b164fbf3bbc59639ca45eaa.jpeg"
+      ],
+      "price": 320,
+      "category": "LG",
+      "description": "Nexus phone releases are timed to let Google have the last word - and what a way to have it! A phone that matches any flagship on specs and premieres the latest OS version, but costs barely half as much as some of them. The Nexus 5 promises a great finale to yet another exciting smartphone season and it's not only the droids that stand to attention.\n\nThis could have been a deja-vu moment for everybody but the fifth gen Google phone will probably have to work harder than ever. There's already a bunch of Snapdragon-800-powered Android flagships, while Qualcomm's latest is ticking inside Windows Phone-powered devices by Nokia too and Apple has the new 64-bit A7 chipset.\n\nOn a second thought, Nexus phones have never been too keen on getting into the skirmish, keeping their distance, aloof and somewhat out of touch, nothing to prove to anyone. The best of Google on your homescreen - that's what it's all about - and at a price that's almost too good to be true.",
+      "title": "LG Google Nexus 5X",
+      "__v": 0
+    }
+  ],
+  "orders": []
+}

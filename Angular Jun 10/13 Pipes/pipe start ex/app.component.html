@@ -1,0 +1,23 @@
+{{message | uppercase}} <br>
+
+{{message | lowercase}} <br>
+
+{{price|currency:"EUR"}} <br>
+
+{{value1|number : "3.2-3"}} <br>
+
+{{value2|percent:"2.2"}}<br>
+
+{{ currentDate | date : "long" }} <br>
+
+{{ studentString }}
+
+<table>
+    <tr *ngFor="let s of students|slice:0:5">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+    </tr>
+</table>
+
+{{message|basic:"upper"}} <br>
+{{message|basic:"lower"}} <br>

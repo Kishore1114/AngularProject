@@ -1,0 +1,17 @@
+<h1>App Component</h1>
+<form novalidate #studentForm="ngForm">
+    Id <input type="text" name="id" #idctrl="ngModel" required minlength="4" [(ngModel)]="s.id">
+    
+    <span *ngIf="idctrl.touched&&idctrl.invalid">
+        <span *ngIf="idctrl.errors&&idctrl.errors.required">
+          please provide value  
+        </span>
+        <span *ngIf="idctrl.errors&&idctrl.errors.minlength">
+           please provide min 4 chars         
+        </span>
+    </span>    
+    <br>    
+    Name<input type="text" name="name" maxlength="10" [(ngModel)]="s.name"><br>
+    Email<input type="text" name="email" email [(ngModel)]="s.email"><br>
+    <button [disabled]="studentForm.invalid">save</button>
+</form>

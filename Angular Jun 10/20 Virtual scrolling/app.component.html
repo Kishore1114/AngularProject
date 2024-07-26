@@ -1,0 +1,18 @@
+<h1>Virtual scrolling table</h1>
+
+<cdk-virtual-scroll-viewport [itemSize]="20">
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>ID</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *cdkVirtualFor="let row of tableData">
+        <td>{{row.name}}</td>
+        <td>{{row.id}}</td>
+      </tr>
+    </tbody>
+  </table>
+</cdk-virtual-scroll-viewport>

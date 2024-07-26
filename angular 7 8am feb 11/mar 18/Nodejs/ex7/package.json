@@ -1,0 +1,14 @@
+{
+  "name": "ex1",
+  "version": "1.0.0",
+  "description": "my first nodejs app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RK",
+  "license": "ISC",
+  "dependencies": {
+    "mssql": "^5.0.3"
+  }
+}

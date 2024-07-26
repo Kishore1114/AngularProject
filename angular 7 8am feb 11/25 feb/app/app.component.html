@@ -1,0 +1,8 @@
+<h1>2 Way data binding example</h1>
+
+<form>
+    Id <input type="text" name="id" [(ngModel)]="s.id"><br>
+    Name <input type="text" name="name"  [(ngModel)]="s.name"><br>
+</form>
+
+Student data is {{s|json}}

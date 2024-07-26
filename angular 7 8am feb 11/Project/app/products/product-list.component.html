@@ -1,0 +1,16 @@
+<div class="container">
+        <h3 class="mt-1">Latest Goods</h3>
+    <div class="row">
+
+        <div class="card col-md-3 mt-1" *ngFor="let product of products">
+            <img class="card-img-top heightwidthclasss"  src="assets/images/items/160/{{product.images[product.mainImageIndex]}}" alt="{{product.title}}"/>
+            <div class="card-body">
+                <a class="card-link" [routerLink]="['productDisplay',product.id]">{{product.title}}</a>
+                <p class="card-text"> {{product.description.substring(0,110)}}.</p>
+                <button class="btn btn-default mr-1" (click)="addToCartFn(product);">Add To cart</button>
+                <button class="btn btn-default">Buy now</button>
+            </div>
+        </div>
+    
+    </div>
+</div>

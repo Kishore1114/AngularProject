@@ -1,0 +1,92 @@
+<div class="row">
+    <div class="form-group clearfix">
+        <div class="col-sm-12">
+            <h3>Shopping Cart</h3>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+        <div class="cart-view row col-sm-12"   *ngIf="cart.products.length>0">
+            <table class="col-sm-12">
+                <tr><td>
+                    <a class="btn btn-primary btn-lg"
+                    [routerLink]="['/store']">Back to main page</a>
+                
+                </td></tr>
+                <tr><td><div class="cart-total">
+                        Merchandise Total: <span class="badge">{{ cart.total | currency}}</span>
+                    </div></td></tr>
+                
+            </table>
+
+            <table class="col-sm-12 cart-view__items">
+                <thead class="w-100">
+                    <tr class="col-sm-12 cart-header clearfix">
+                        <td class="col-sm-2"></td>
+                        <td class="col-sm-2">Items</td>
+                        <td class="col-sm-2">Price</td>
+                        <td class="col-sm-2">Quantity</td>
+                        <td class="col-sm-2">Total</td>
+                        <td class="col-sm-1 text-center">
+                            <button class="btn btn-default"
+                                    (click)="cartCtrl.deleteAll()">All</button>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody class="w-100">                
+                    <tr class="col-sm-12 cart-row" *ngFor="let cartProduct of cart.products">
+
+                        <td class="col-sm-2 text-center">
+                            <img class="cart-item-image" src="assets/images/items/160/{{cartProduct.product.images[cartProduct.product.mainImageIndex]}}" alt=""/>
+                        </td>
+                        <td class="col-sm-2">{{ cartProduct.product.title }}</td>
+                        
+                        <td class="col-sm-2">
+                                {{ cartProduct.product.price  | currency }}
+                        </td>
+                        <td class="col-sm-2">
+                            <input type="number" [value]= "cartProduct.quantity" #quant (change)="changeQuantity(cartProduct,quant);" min="1"></td>
+                        <td class="col-sm-2">
+                            {{ cartProduct.amount | currency }}
+                        </td>
+                        <td class="col-sm-1 text-center">
+                            <button class="btn btn-default"
+                                (click)="deleteFromCart(cartProduct)">
+                                X
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <table>
+                <tr class="cart-total pull-left">
+                   <td> Merchandise Total: <span class="badge">{{ cart.total | currency}}</span>
+                   </td>
+                </tr>
+                <tr class="col-sm-6 no-padding pull-right">
+                    <td class="btn-group btn-group-justified">
+                        <div class="btn-group">
+                                <a class="btn btn-success btn-lg"
+                                [routerLink]="['/store']">Continue shopping</a>
+                        </div>
+                        </td>
+                        <td>
+                        <div class="btn-group">
+                            <a class="btn btn-success btn-lg"
+                                   [routerLink]="['/store/checkout']">Checkout</a>
+                        </div>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <div class="cart-view_empty"
+             *ngIf="cart.products.length==0">
+            <img src="http://www.coursemate.ca/images/cart_empty.png" alt=""/>
+            <h2>There are no items in your shopping cart.</h2>
+                <a class="btn btn-success btn-lg"
+                [routerLink]="['/store']">Continue shopping</a>
+        </div>
+</div>

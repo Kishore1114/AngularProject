@@ -1,0 +1,36 @@
+<form #studentForm="ngForm" novalidate> 
+
+        Id <input type="text" #idCtrl="ngModel" name="id" [(ngModel)]="s.id" required pattern="[0-9]{4,10}"> 
+        
+        <span *ngIf="idCtrl.touched&&idCtrl.invalid">
+
+            <span *ngIf="idCtrl.errors.required">
+                please provide id value
+            </span>    
+            
+            <span *ngIf="idCtrl.errors.pattern">
+                please provide only numbers min 4 and max 10
+            </span>    
+        </span>
+        
+        <br>
+
+
+        Email <input type="text" name="email" required [(ngModel)]="s.email" email minlength="10" #emailCtrl="ngModel">
+
+        <span *ngIf="emailCtrl.touched&&emailCtrl.invalid">
+            <span *ngIf="emailCtrl.errors.required">
+                please provide email id
+            </span>
+            <span *ngIf="emailCtrl.errors.email">
+                please provide good email
+            </span>
+            <span *ngIf="emailCtrl.errors.minlength">
+                please provide min 10 char
+            </span>
+        </span>
+
+        <br>
+
+
+</form>

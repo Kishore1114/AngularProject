@@ -1,0 +1,20 @@
+1)		npm install ngx-toastr --save
+
+2)		npm install @angular/animations --save
+
+3)		@import "~ngx-toastr/toastr.css";
+
+4)		import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+ 
+		import { ToastrModule } from 'ngx-toastr';
+		
+5)		import { ToastrService } from 'ngx-toastr';
+ 
+		@Component({...})
+		export class YourComponent {
+		  constructor(private toastr: ToastrService) {}
+		 
+		  showSuccess() {
+			this.toastr.success('Hello world!', 'Toastr fun!');
+		  }
+		}

@@ -1,0 +1,41 @@
+message is {{message|uppercase}} <br>
+
+message is {{message|lowercase}} <br>
+
+original value is {{message}} <br>
+
+price is {{price|currency:"GBP"}} <br>
+
+student id is {{student|json}} <br>
+
+<table>
+    <tr *ngFor="let s of students|slice:start:end">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+    </tr>
+</table>
+<button (click)="prev();"><</button>
+<button (click)="next();">></button> <br>
+
+after formatting the data is {{value|percent:'2.2-3'}} <br>
+
+current date is {{currentDate|date:"MMM/dd/yyyy"}} <br>
+
+Custome Pipe op is {{message|basic:"upper"}} <br>
+
+Custome Pipe op is {{message|basic:"lower"}}
+
+<input type="text" name="searchInput" [(ngModel)]="searchInput">
+<table>
+    <tr *ngFor="let name of names|contentFilter:searchInput">
+        <td>{{name}}</td>
+    </tr>
+</table>
+
+<input type="text" name="searchIdInput" [(ngModel)]="searchIdInput">
+<table>
+    <tr *ngFor="let s of students|contentObjectFilter:searchIdInput">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+    </tr>
+</table>

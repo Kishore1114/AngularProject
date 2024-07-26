@@ -1,0 +1,111 @@
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header">
+                <i class="far fa-plus-square"></i> Registration
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-row ">
+                <div class="form-group col-md-6">
+                    <label for="userName">User Name</label>
+                    <input type="text" class="form-control is-valid" name="userName" id="userName" [(ngModel)]="user.userName">
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">password</label>
+                    <input type="text" class="form-control is-valid" name="password"  [(ngModel)]="user.password">
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="emailId">Email Id</label>
+                    <input type="email" class="form-control is-valid" name="emailId"  [(ngModel)]="user.emailId">
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" class="form-control is-valid" name="phoneNumber"  [(ngModel)]="user.phoneNumber">
+                        <div class="invalid-feedback">
+                            Validation message
+                        </div>
+                    </div>
+                <div class="form-group col-md-6">
+                    <label for="firstName">firstName</label>
+                    <input class="form-control is-valid" name="firstName"  [(ngModel)]="user.firstName"/>
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control is-valid" name="lastName"  [(ngModel)]="user.lastName">
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="address1">address1</label>
+                    <input class="form-control is-valid" name="address1"  [(ngModel)]="user.address1"/>
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="address2">address2</label>
+                    <input class="form-control is-valid" name="address2"  [(ngModel)]="user.address2"/>
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>    
+                <div class="form-group col-md-6">
+                    <label for="country">country</label>
+                    <select class="form-control is-valid" name="country"  [(ngModel)]="user.country">
+                        <option>-----------</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Pakistan</option>    
+                    </select>
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="state">state</label>
+                    <select class="form-control is-valid" name="state"  [(ngModel)]="user.state">
+                        <option>-----------</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Pakistan</option>    
+                    </select>
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="zip">zip</label>
+                    <input class="form-control is-valid" name="zip"  [(ngModel)]="user.zip"/>
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>    
+                <div class="form-group col-md-6">
+                    <label for="avatar">avatar</label>
+                    <input class="form-control is-valid" name="avatar"  [(ngModel)]="user.avatar"/>
+                    <div class="invalid-feedback">
+                        Validation message
+                    </div>
+                </div>
+                <button class="btn btn-primary" (click)="register();">Submit</button>
+                <!-- TODO: This is for server side, there is another version for browser defaults -->
+            </div>
+        </form>
+    </div>
+    </div>   
+</div>

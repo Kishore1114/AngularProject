@@ -1,0 +1,5 @@
+master page  <br>
+i value is {{i}}<br>
+<button (click)="i=i+1;">+</button>
+<button (click)="i=i-1;">-</button><br>
+<detail [j]="i" (abc)="m1($event);"></detail>

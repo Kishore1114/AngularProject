@@ -1,0 +1,19 @@
+price value is {{price}} <br>
+message value is {{message}} <br>
+result value is {{result}} <br>
+<input type="text" name="price" [value]="price"> <br>
+
+<table border="2">
+    <tr *ngFor="let name of names">
+        <td>{{name}}</td>
+    </tr>
+</table>
+
+<table border="2">
+    <tr *ngFor="let s of students">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+    </tr>
+</table>
+
+<button (click)="m1();">Change</button>

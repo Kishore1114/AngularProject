@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<!-- popovers -->
+
+		<!-- it is a pop-up box that appears when the user clicks on an element.  -->
+
+		<button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+		<button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-placement="right" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+		<button type="button" class="btn btn-primary focuspop" data-toggle="popover" title="Popover title" data-placement="right" data-trigger="focus" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+		<div style="margin-top:200px">
+		</div>
+
+		<input type="text" class="form-control" name="username" data-toggle="popover" data-placement="right" data-content="provide username">
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+		$(function () {
+		  $('[data-toggle="popover"]').popover();
+		});
+	</script>
+</body>
+</html>

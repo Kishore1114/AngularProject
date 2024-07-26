@@ -1,0 +1,13 @@
+<table border="1"> 
+
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    <tr *ngFor="let s of students">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+    </tr>
+
+</table>
+<button (click)="m1();">next</button>

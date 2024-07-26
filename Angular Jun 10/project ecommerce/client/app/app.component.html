@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">E-Commerce</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            <li class="nav-item">
+                    <a class="nav-link" routerLink="/add-product">Add Product</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/product-list">Product List</a>
+            </li>            
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item" *ngIf="!isLoggedIn();">
+                <a class="nav-link"  [routerLink]="['/login']">Login</a>
+            </li>
+            <li class="nav-item" *ngIf="!isLoggedIn();">
+                <a class="nav-link"  [routerLink]="['/register']">Register</a>
+            </li>
+            <li class="nav-item" *ngIf="isLoggedIn();">
+                    Welcome {{ getUserName() }}
+                </li>
+            <li class="nav-item">
+                <button class="btn btn-default justify-content-right" (click)="displayCart();">
+                    <span class="text-dark">
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    </span>
+                    <span class="badge badge-info" *ngIf="cart.products.length==0">is empty </span>
+                    <span *ngIf="cart.products.length>0">
+                        <span class="badge badge-info"> {{ cart.products.length }} items</span>
+                        <span class="badge badge-success"> {{ cart.total | currency}}</span>
+                    </span>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+

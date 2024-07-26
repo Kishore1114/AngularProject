@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-3">
+            <div class="view hm-zoom z-depth-2" style="cursor: pointer">
+               <img [src]="cproduct.imageUrl" class="img-fluid" alt="i-phone-img">
+            </div>
+            <div class="" style="margin-top:15px">
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6 class="my-0">Product Price</h6>
+                    </div>
+                    <span class="text-muted" style="color:crimson !important">₹ {{cproduct.price}}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6 class="my-0">{{cproduct.seller}}</h6>
+                    </div>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" (click)="addToProduct();">Add to Cart</button>
+                <button class="btn btn-primary" (click)="addToProduct();"><i class="fa fa-heart" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        
+        <div class="col-md-8 mt-3">
+
+            <h5>Product Details</h5>
+            <table class="table" cellspacing="0" style="max-height: 28px">
+                <tbody>
+                    <tr>
+                    <th scope="row">Product Name</th>
+                    <td>{{cproduct.name}}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Product Description</th>
+                    <td>{{cproduct.description}}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Product Category</th>
+                    <td>{{cproduct.category}}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">No. of quantity available</th>
+                    <td>{{cproduct.quantity}}</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Product Added on</th>
+                    <td>{{cproduct.added | date:"dd-MMM-yyyy"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+                
+        </div>
+    </div>
+</div>

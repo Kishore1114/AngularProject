@@ -1,0 +1,22 @@
+message is {{message|uppercase}} <br>
+
+message is {{message|lowercase}} <br>
+
+original value is {{message}} <br>
+
+price is {{price|currency:"GBP"}} <br>
+
+student id is {{student|json}} <br>
+
+<table>
+    <tr *ngFor="let s of students|slice:start:end">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+    </tr>
+</table>
+<button (click)="prev();"><</button>
+<button (click)="next();">></button> <br>
+
+after formatting the data is {{value|percent:'2.2-3'}} <br>
+
+current date is {{currentDate|date:"MMM/dd/yyyy"}}
